@@ -47,7 +47,7 @@ steps:
       ./app-deployment.yaml 
       ./mongodb-deployment.yaml 
     containers: |
-      ahamedaasik.azurecr.io/$(imageRepository):$(imageTag)    //here add your azure conatiner registry login servername
+      ahamedaasik.azurecr.io/$(imageRepository):$(imageTag)    
  
 # Slack Notification
 - task: Bash@3
