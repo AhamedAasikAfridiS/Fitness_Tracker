@@ -44,9 +44,8 @@ steps:
     kubernetesServiceConnection: 'aks-connection'
     namespace: 'default'
     manifests: |
-      k8s/app-deployment.yml // add your deployment file name with file location
-      # k8s/configmap.yml //     add your deployment file name with file location
-      k8s/mongodb-deployment.yaml // add your deployment file name with file location
+      Fitness_Tracker/app-deployment.yml 
+      Fitness_Tracker/mongodb-deployment.yaml 
     containers: |
       ahamedaasik.azurecr.io/$(imageRepository):$(imageTag)    //here add your azure conatiner registry login servername
  
