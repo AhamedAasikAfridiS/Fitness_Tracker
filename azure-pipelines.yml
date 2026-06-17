@@ -41,7 +41,7 @@ steps:
   displayName: 'Deploy to AKS'
   inputs:
     action: 'deploy'
-    kubernetesServiceConnection: 'aks-connection' //add your azure  kubernetes connection name
+    kubernetesServiceConnection: 'aks-connection'
     namespace: 'default'
     manifests: |
       k8s/app-deployment.yml // add your deployment file name with file location
